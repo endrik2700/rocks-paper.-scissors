@@ -1,0 +1,11 @@
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\bin\Debug\netcoreapp2.0\Rock, paper, scissors.deps.json
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\bin\Debug\netcoreapp2.0\Rock, paper, scissors.runtimeconfig.json
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\bin\Debug\netcoreapp2.0\Rock, paper, scissors.runtimeconfig.dev.json
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\bin\Debug\netcoreapp2.0\Rock, paper, scissors.dll
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\bin\Debug\netcoreapp2.0\Rock, paper, scissors.pdb
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.csprojResolveAssemblyReference.cache
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.AssemblyInfo.cs
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.dll
+C:\Users\opilane\source\repos\Rock, paper, scissors\Rock, paper, scissors\obj\Debug\netcoreapp2.0\Rock, paper, scissors.pdb
