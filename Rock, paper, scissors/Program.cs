@@ -1,88 +1,75 @@
-﻿namespace Rock__paper__scissors
+﻿using System;
+
+namespace Rock__paper__scissors
 {
     class Program
-    {
+    {   public static string userPick;
+        public static string computerpick;
 
-        public static int computerChoice;
-        public static int userPick;
-        public static int userPoints =0;
-        public static int computerPoints=0;
-        public static void Main(string[] args)
-        {
-
-            Console.WriteLine("Hello! Pick your nr from 1-3");
-             userPick = int.Parse(Console.ReadLine());
-            Random newRand = new Random();
-            computerChoice = newRand.Next(1, 4);
-            while (userPoints <=3 || computerPoints <=3) 
-            {
-                Console.WriteLine(Comparer(userPick, computerChoice));
-                if (computerPoints ==3 || userPoints ==3)
-                {
-                    break;
-                }
-            }
+        public static void Main () {
+            Random  rand = new Random();   
+            int userChoice;
+            int computerChoice;
             
+            int userPoints =0;
+            int computerPoints =0;
+            Console.WriteLine("Hello!");
             Console.ReadLine();
-            }
-        }
-        public static String Comparer(int nr1, int nr2 )
+            while (userPoints <=3 || computerPoints <=3) 
         {
-            string result = "text";
-            string pickedByComp;
-            string pickedByUser;
-            if (computerChoice == 1)
+            Console.WriteLine ( "Pick your number from 1-3, 1=paper, 2=rock, 3=scissors"); 
+             userChoice = int.Parse(Console.ReadLine());
+             computerChoice = rand.Next(1,4);
+            switch (userChoice =1 )
             {
-                pickedByComp = "rocks";
-
+                case 1:
+                    userPick ="paper";
+                    break;
+                case 2:
+                   userPick ="rock";
+                   break;
+                case 3:
+                userPick = "scissors";
+                break;
             }
-            else if (computerChoice ==2)
-            {
-                pickedByComp = "paper";
+         switch (computerChoice) {
+               case 1:
+               computerpick = "paper";
+               break;
+               case  2:
+              
+               computerpick = "rock";
+               break;
+               case  3:
+               computerpick = "scissors";
+               break;
+               default :
+               Console.WriteLine("something is not right");
+               break;
+         }
+            if ( userChoice ==1 && computerChoice == 2 || userChoice == 2 && computerChoice ==3 || userChoice ==3 && computerChoice ==1  ) {
+                  Console.WriteLine ("You picked " + userPick + "and computer picked " + computerpick + " you won!");
+                  userPoints ++;
+                  Console.WriteLine ("User has " + userPoints + "  points and the computer has " + computerPoints + "points");
             }
-            else
-            {
-                pickedByComp = "scissors";
+            else if ( userChoice ==3 && computerChoice == 2 || userChoice == 2 && computerChoice ==1 || userChoice ==1 && computerChoice ==3 ) {
+                    Console.WriteLine ("You picked " + userPick + "and computer picked " + computerpick + " you lost!");
+                    computerPoints ++;
+                    Console.WriteLine ("User has " + userPoints + "  points and the computer has " + computerPoints + " points");
+            } else {
+                 Console.WriteLine ("You picked " + userPick + " and the computer picked " + computerpick + " there is a tie");
+                 Console.WriteLine ("User has " + userPoints + "  points and the computer has " + computerPoints + " points");
             }
-
-
-            if (userPick == 1)
-            {
-                pickedByUser = "rocks";
+            if ( userPoints ==3) {
+                Console.WriteLine("User won");
+                break;
             } 
-            else if (userPick == 2 )
-            {
-                pickedByUser = "paper";
+            else if (computerPoints ==3){
+                Console.WriteLine("Computer won");
+                break;
             }
-            else
-            {
-                pickedByUser = "scissors";
-            }
-             
-            if (userPick ==1 & computerChoice ==2 || userPick ==2 && computerChoice==3 || userPick ==3 && computerChoice ==1)
-            {
-         result =(" You picked " + pickedByUser + " and won! Congrats! Computer picked " + pickedByComp);
-         userPoints +=1;
-         Console.WriteLine("Computer has " + computerPoints + " points and user has " + userPoints + " points");
-        // Console.ReadLine();
-
-            }
-            
-            else if (userPick == 1 &&computerChoice== 3 || userPick ==3 &&computerChoice ==2 || userPick ==2 &&computerChoice 1)
-                {
-                result = (" You picked " + pickedByUser + " and lost" + " Computer picked " + pickedByComp);
-                computerPoints +=1;
-                Console.WriteLine("Computer has " + computerPoints + " points and user has " + userPoints + " points");
-                //Console.ReadLine();
-            }
-             else
-            {
-                result = " You picked "  + pickedByUser + " and  Computer picked " + pickedByComp + " and it's a die ";
-          Console.WriteLine("Computer has " + computerPoints + " points and user has " + userPoints + " points");
-        // Console.ReadLine();
-            }
-            return result;
+         }
         }
-            
-        }
+        
     }       
+}
